@@ -1,0 +1,112 @@
+/*전체 적용*/
+*{
+  margin:0px;
+  padding:0px;
+}
+
+/*레이아웃*/
+nav{
+  background-color:cornflowerblue;
+  padding:12px;
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  top: 0;
+  
+}
+nav > ul{
+  display: flex;
+  list-style: none;
+}
+header{
+  background-color: aqua;
+}
+header > section{
+  display: flex;
+}
+.header_left, .header_right{
+  margin: 20;
+}
+.header_left{
+  width: 30%;
+  text-align: center;
+  margin: 20px;
+}
+.header_right{
+  width: 70%;
+  margin: 20px;
+
+}
+main{
+  background-color:darkgray;
+  display: flex;
+  /*flex-wrap: wrap;*/
+}
+main > section{
+  width: 25%;
+  margin: 20px;
+  text-align: center;
+}
+img{
+  border-radius: 25%;
+}
+h2{
+  color:cornsilk
+}
+footer{
+  background-color: dodgerblue;
+  display:flex;
+  justify-content: center;
+  color:chartreuse;
+  bottom: 0px;
+  position: sticky;
+}
+footer > h2, footer > ul{
+  margin: 10px;
+}
+footer > ul{
+  list-style: none;
+}
+@media only screen and (max-width:600px){
+  header > section {
+    flex-direction: column;
+    align-items: center;
+  }
+  main{
+    flex-direction: column;
+      align-items: center;
+  }
+
+
+  .header_left, .header_right{
+    width: 80%;
+  }
+
+main > section{
+  width: 80%;
+  text-align: center;
+}
+footer > ul{
+  display: none;
+  }
+}
+
+header{
+  font-family: 'Yeon Sung', cursive;
+  font-size: 20px;
+  color:coral;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+nav a:hover{
+  background-color: blueviolet;
+  color:yellowgreen
+}
+nav li{
+  margin-left: 20px;
+  margin-right: 20px;
+}
